@@ -1,0 +1,12 @@
+basic=float(input('Enter Basic Salary: '))
+if basic<=10000:
+    da=80*basic/100
+    hra=20*basic/100
+elif basic<=20000:
+    da=90*basic/100
+    hra=25*basic/100
+elif basic>=20000:
+    da=95*basic/100
+    hra=30*basic/100
+gross=basic+hra+da
+print("Gross Salary = {}".format(gross))
